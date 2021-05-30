@@ -1,0 +1,88 @@
+.payment-section{
+    background-color: #2f3b52 ;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+.pay-img img{
+    width: 80%;
+    margin: 20px 0;
+
+}
+.payment-area{
+    background-color: #3e4e6c;
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px 6px #75829c;
+}
+.payment-area h2{
+    color: #fff ;
+    padding-top: 30px;
+}
+.payment-form{
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+}
+.payment-form label{
+    color: #fff ;
+    margin-top: 20px;
+    font-weight: 500;
+}
+.pay-btn button{
+    color: white;
+    margin: 30px 0 40px;
+    font-size: 18px;
+}
+
+.pay-btn button:hover{
+    color: #fff;
+}
+/*  */
+.payment-form label {
+    width: 100%;
+}
+
+/* confirm */
+
+
+.confirm-box .table td, .table th {
+    border-top: none !important;
+}
+.confirm-box{
+    width: 90%;
+    margin: 30px auto;
+    box-shadow: 0px 0px 12px 0px #9fb1d4;
+    text-align: center;
+    padding: 30px 50px;
+    border-radius: 10px;
+    background: #3e4e6c!important;
+    display: block;
+    overflow: hidden;
+}
+.confirm-box h3{
+    color: #3bff3b;
+    margin-bottom: 30px;
+}
+.confirm-box .table thead th {
+    border-bottom: none !important;
+}
+.confirm-box td{
+    color: #fff ;
+    font-weight: 500;
+}
+.confirm-box tr {
+    border-bottom: 1px solid lightgray;
+}
+.title-set{
+    margin-left: 5%;
+    margin-bottom: 2.5rem!important;
+}
+.see-orders-btn{
+    color: white !important;
+    margin: 30px 0 10px;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 8px 26px !important;
+}

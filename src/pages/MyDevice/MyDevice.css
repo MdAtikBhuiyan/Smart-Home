@@ -1,0 +1,108 @@
+
+.my-device{
+    background-color: #2f3b52 ;
+    min-height: 100vh;
+}
+.buy-devices-details{
+    background-color: #3e4e6c !important;
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-shadow: 2px 2px 12px 6px #536485;
+    text-align: center;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.buy-devices-details h6{
+    color: white ;
+}
+.buy-devices-details p{
+    color: lightgray
+}
+.my-device-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my-device-btn{
+    color: white;
+    margin: 20px 0 10px;
+}
+.no-device {
+    width: 350px;
+    margin: 20px auto;
+    background: #41516dc4 !important;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px #a2baec !important;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 15px;
+}
+.no-device p{
+    color: #fff !important;
+    font-size: 20px;
+    font-weight: 400;
+}
+.btn-center{
+    width: 90%;
+    margin: auto;
+}
+/* Modal */
+
+.modal-title{
+    color: #fff;
+    margin-left: 22px;
+}
+.modal-header {
+    border-bottom: none !important;
+}
+.modal-body label{
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.modal-body button{
+    font-weight: 500;
+    margin-top: 20px;
+}
+.modal-footer{
+    border-top: none !important;
+}
+.modal-body p{
+    color: #11f511;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 22px;
+}
+.modal-content {
+    background-color: #41516dc4 !important;
+    box-shadow: 2px 2px 15px #a2baec !important;
+    border:none !important;
+}
+.modal-body form{
+    width: 90%;
+    margin: auto;
+}
+.close{
+    color: #dc3545 !important;
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-size: 1.5rem;
+}
+.close:hover {
+    color: #dc3545 !important;
+    transform: scale(1.1);
+}
+
+.connected{
+    color: #37e23c;
+}
+.disconnected{
+    color: #f56019;
+}

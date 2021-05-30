@@ -1,0 +1,115 @@
+.devices-area{
+    background: #2f3b52;
+    min-height: 100vh;
+    display: block;
+    overflow: hidden;
+}
+.devices{
+    padding: 10px 20px;
+    background: #3e4e6c;
+}
+.devices-area .table{
+    text-align: center;
+}
+.devices-area .table thead th {
+    border-bottom: none !important;
+    border-top: none !important;
+    color:#fff;
+    font-size: 20px;
+    font-weight: 400 !important;
+}
+.devices-area .table td {
+    border-top: 1px solid #2f3b52;
+}
+.devices-area .table td{
+    padding: .75rem;
+    vertical-align: top;
+    border-bottom: 1px solid #2f3b52 !important;
+    color:rgb(179 179 179);
+    font-size: 18px;
+}
+.MuiSvgIcon-root {
+    font-size: 3.5rem !important;
+}
+.d-title{
+    margin: 0px 0 20px;
+    color: #fff;
+}
+.house img{
+    width: 100%;
+    border-radius: 50%;
+    margin: 0px 0 20px;
+}
+.house h4{
+    color: rgb(191 191 191);
+    font-weight: 400;
+    text-align: center;
+}
+.house p{
+    color: #eaeaea;
+    margin-top: 30px;
+    text-align: center;
+}
+.show-devices img{
+    height: 50px;
+    background: rgb(179 179 179);
+    border-radius: 10px;
+}
+.devices-area .table td{
+    vertical-align: middle;
+}
+
+/* header */
+
+.navbar-brand{
+    font-size: 32px !important;
+    color: white !important;
+    position: relative;
+}
+.navbar-brand span{
+    position: absolute;
+    content: '';
+    top: -17px;
+    left: 0px;
+}
+.navbar-brand span img{
+    height: 20px;
+}
+.navbar-light .navbar-toggler svg{
+    color: #fff;
+    font-size: 32px;
+}
+.navbar-light .navbar-toggler {
+    border-color: transparent !important;
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none !important;
+}
+.navbar-toggler:focus svg{
+    color: rgba(0,0,0,.55) !important;
+}
+.nav-link{
+    display: inline-block;
+    color: white !important;
+    font-size: 16px !important;
+    margin: 0 15px;
+    width: fit-content;
+    border-bottom: 2px solid transparent;
+}
+.nav-link:hover,
+.nav-link:focus{
+    color: white !important;
+    border-bottom: 2px solid white;
+}
+.log-btn:hover{
+    border-bottom-color: transparent !important;
+}
+
+
+@media only screen and (max-width: 1023px) {
+    .nav-link {
+        margin: 10px 0;
+    }
+  }

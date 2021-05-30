@@ -1,0 +1,92 @@
+.login-area {
+    display: block;
+    overflow: hidden;
+    min-height: 100vh;
+    background-color: #2f3b52;
+}
+
+.login-area .col-md-7,
+.login-area .col-md-5{
+    padding-right: 0;
+    padding-left: 0;
+}
+.login-bg{
+    background-image: linear-gradient(rgba(0,168,255,0.3),rgba(0,168,255,0.3)), url('../images//login-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 115vh;
+    width: 100%;
+}
+.login-content{
+    background-color: #2f3b52;
+    /* min-height: 100vh; */
+    text-align: center;
+}
+.login-content img{
+    width: 30px;
+    height: 40px;
+    margin-top: 50px;
+}
+.signIn-area,
+.signUp-area{
+    width: 90%;
+    margin: 30px auto 0;
+    padding-bottom: 20px;
+    text-align: left;
+}
+.signIn-area h3,
+.signUp-area h3{
+   color: #fff;
+   margin-bottom: 30px;
+   text-align: center;
+}
+.signIn-area label,
+.signUp-area label{
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+ }
+ .login-btn{
+     color: white !important;
+     font-weight: 500 !important;
+     margin-top: 10px;
+ }
+ .optional-option{
+     color: rgb(179 179 179);
+     text-align: center;
+     margin-top: 40px;
+ }
+ .optional-option button{
+    color: #0797fd;
+    font-weight: 600;
+    border: none;
+    background: transparent;
+    font-size: 18px;
+}
+.google-login .btn{
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.google-login .btn span{
+    color: #EA4335;
+    font-size: 20px;
+    margin-left: 8px;
+    margin-top: 5px;
+}
+.google-login .btn:hover{
+    color: white;
+}
+.google-login .btn:focus,
+.google-login .btn:active{
+    color: #0d6efd;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.optional-option span:active{
+    color: white;
+}

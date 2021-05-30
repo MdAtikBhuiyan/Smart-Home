@@ -1,0 +1,85 @@
+/* admin navbar */
+.admin-nav-area{
+    min-height: 100vh;
+    background: #2f3b52;
+    display: block;
+    overflow: hidden;
+}
+.nav-area{
+    background-color: #2f3b52;
+    text-align: center;
+    min-height: 100vh;
+    padding: 30px 0;
+}
+.admin-nav-area .nav-link{
+    display: block;
+    width: 100%;
+}
+.nav-area .nav-link{
+    color: white;
+    margin: 5px 0;
+}
+.nav-area .nav-link:hover,
+.nav-area .nav-link:focus{
+    background: #3e4e6c;
+    border-bottom: none !important;
+}
+
+/* ADD DEVICES */
+.add-title{
+    padding: 50px 30px 30px;
+    color: #fff;
+    font-weight: bolder;
+} 
+.form-area{
+    background: #3e4e6c;
+    height: 100vh;
+}
+.form-section{
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px 50px;
+}
+.margin{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.form-section label{
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* manage devices area */
+.manage-background{
+    background: #3e4e6c;
+    padding: 0px 0 40px;
+    min-height: 100vh;
+}
+.product-info .table thead th {
+    vertical-align: bottom;
+    border-bottom: none !important;
+    color:#202452 !important;
+    background: #f5dcdc;
+}
+.product-info .table td, .product-info .table-design.table th {
+    border-top: none !important;
+}
+.border-left-design{
+    border-radius: 6px 0 0 6px;
+}
+.border-right-design{
+    border-radius: 0 6px 6px 0;
+}
+.product-info{
+    background: white;
+    padding: 30px 30px 10px;
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+}
+button.btn.delete-btn {
+    background: #ff0000c7;
+    color: white;
+}
