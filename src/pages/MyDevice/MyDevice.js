@@ -12,7 +12,7 @@ const MyDevice = () => {
 
     const [devices, setDevice] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:5000/showBuyDevice/${email}`)
+        fetch(`https://afternoon-wildwood-65572.herokuapp.com/showBuyDevice/${email}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data)

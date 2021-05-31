@@ -41,7 +41,7 @@ const AddDevices = () => {
         console.log(devicesInfo);
         dispatch(getDevice(devicesInfo))
 
-        // fetch('http://localhost:5000/addDevice', {
+        // fetch('https://afternoon-wildwood-65572.herokuapp.com/addDevice', {
         //     method: "POST",
         //     headers: { "Content-Type": "application/json" },
         //     body: JSON.stringify(devicesInfo)

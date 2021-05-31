@@ -7,7 +7,7 @@ const ManageDeviceDetails = ({devices}) => {
 
     const deleteDevice = (id) => {
 
-        fetch(`http://localhost:5000/deleteDevice/${id}`,{
+        fetch(`https://afternoon-wildwood-65572.herokuapp.com/deleteDevice/${id}`,{
             method:'DELETE'
         })
         .then(res => res.json())

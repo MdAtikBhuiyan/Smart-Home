@@ -90,3 +90,38 @@
 .optional-option span:active{
     color: white;
 }
+.logout-area{
+    min-height: 100vh;
+}
+.logout-info {
+    width: 400px;
+    margin: auto;
+    background: #41516dc4 ;
+    border-radius: 10px;
+    padding: 20px 20px 10px;
+    margin-top: 40px;
+    color: white;
+    text-align: center;
+    box-shadow: 2px 2px 15px #a2baec !important;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logout-info p{
+    color: #14ff14;
+    font-weight: 500;
+    font-size: 24px;
+}
+.logout-info button{
+    padding: 8px 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.user-logout-info p{
+    font-size: 16px;
+    margin-bottom: 0;
+    color: rgb(193 193 193);
+}

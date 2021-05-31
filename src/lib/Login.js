@@ -9,8 +9,9 @@ import './Login.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { fab, faGoogle } from '@fortawesome/free-brands-svg-icons';
 import { useDispatch, useSelector } from "react-redux";
-import { setOption, setUser } from "../redux/slices/loginSlice";
+import { setOption, setUser, userSignOut } from "../redux/slices/loginSlice";
 import { useHistory, useLocation } from 'react-router';
+import Header from './../components/Header';
 
 
 if (!firebase.apps.length) {
@@ -20,7 +21,6 @@ if (!firebase.apps.length) {
 const Login = () => {
 
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
 
     let history = useHistory();
     let location = useLocation();
@@ -28,7 +28,7 @@ const Login = () => {
 
     const dispatch = useDispatch()
     let option = useSelector((state) => state.loginReducer.option);
-    let user = useSelector((state) => state.loginReducer.setUser);
+    let user = useSelector((state) => state.loginReducer);
 
     const loginWithGogle = () => {
         var provider = new firebase.auth.GoogleAuthProvider();
@@ -49,9 +49,40 @@ const Login = () => {
                 dispatch(setUser(userDetails))
             });
     }
+
+    const signOut = () => {
+        firebase.auth().signOut().then(() => {
+            const signOutUser = { ...user };
+            signOutUser.name = '';
+            signOutUser.email = '';
+            signOutUser.isSignedIn = false;
+            dispatch(userSignOut(signOutUser))
+        }).catch((error) => {
+            // An error happened.
+        });
+    }
+
+console.log(user)
     return (
 
         <section className="login-area">
+
+            {   
+
+                user.isSignedIn ?
+                <div className='logout-area'>
+                    <Header></Header>
+                    <div className='logout-info'>
+                        <p>Already Logged In</p>
+                        <div className='user-logout-info'>
+                            <p>{user.name}</p>
+                            <p>{user.email}</p>
+                        </div>
+                        <button onClick={signOut} className="btn btn-danger mt-4">Logout</button>
+                    </div>
+                </div>
+
+            :
 
             <Row>
 
@@ -205,6 +236,8 @@ const Login = () => {
                     </Container>
                 </Col>
             </Row>
+            }
+
         </section>
 
     );

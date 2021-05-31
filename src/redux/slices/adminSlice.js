@@ -27,17 +27,17 @@ export const { setDevice, allDevices, incrementByAmount } = adminSlice.actions
 export const getDevice = (payload) => {
     console.log('add', payload)
     return async (dispatch) => {
-        const device = await axios.post('http://localhost:5000/addDevice', payload)
+        const device = await axios.post('https://afternoon-wildwood-65572.herokuapp.com/addDevice', payload)
         console.log('add', device)
         dispatch({
             type: setDevice,
             payload: device,
         })
-            .then(error => console.log(error))
+        
     }
 
     // return (dispatch) => {
-    //     fetch('http://localhost:5000/addDevice', {
+    //     fetch('https://afternoon-wildwood-65572.herokuapp.com/addDevice', {
     //         method: "POST",
     //         headers: { "Content-Type": "application/json" },
     //         body: JSON.stringify(dispatch(setDevice(payload)))
@@ -48,7 +48,7 @@ export const getDevice = (payload) => {
 
 
 export const showDevice = (payload) => (dispatch) => {
-    fetch('http://localhost:5000/showDevices')
+    fetch('https://afternoon-wildwood-65572.herokuapp.com/showDevices')
         .then(res => res.json())
         .then((data) => dispatch(allDevices(data)))
 }

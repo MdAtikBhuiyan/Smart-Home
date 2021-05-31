@@ -18,7 +18,7 @@ const PaymentOption = () => {
 
     const [device, setDevice] = useState({});
     useEffect(() => {
-        fetch(`http://localhost:5000/device/${id}`)
+        fetch(`https://afternoon-wildwood-65572.herokuapp.com/device/${id}`)
             .then(res => res.json())
             .then(data => setDevice(data))
     }, [])
@@ -44,7 +44,7 @@ const PaymentOption = () => {
             login: userInfo.isSignedIn
         }
         console.log('ad buy data', buyingInfo);
-        fetch('http://localhost:5000/buyDevice', {
+        fetch('https://afternoon-wildwood-65572.herokuapp.com/buyDevice', {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(buyingInfo)

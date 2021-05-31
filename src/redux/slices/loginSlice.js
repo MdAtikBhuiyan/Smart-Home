@@ -19,10 +19,16 @@ const loginSlice = createSlice({
             state.isSignedIn = action.payload.isSignedIn;
             state.error = action.payload.error;
             console.log(action.payload.name)
+        },
+        userSignOut: (state, action) => {
+            state.name = action.payload.name;
+            state.email = action.payload.email;
+            state.isSignedIn = action.payload.isSignedIn;
+            state.error = action.payload.error;
         }
     },
 })
 
-export const { setOption, setUser} = loginSlice.actions
+export const { setOption, setUser, userSignOut} = loginSlice.actions
 
 export default loginSlice.reducer
